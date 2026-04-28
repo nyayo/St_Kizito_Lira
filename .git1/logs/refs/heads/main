@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 b3d86a83ab508762363a1450ddfc7504e135013e Ivan Nyayo <ivannyayo@gmail.com> 1775759000 +0300	clone: from https://github.com/Innoverse-Technologies/St_Kizito_Lira.git
+b3d86a83ab508762363a1450ddfc7504e135013e 44e7aa98629870df411b8493a25a1dab0df38c69 Ivan Nyayo <ivannyayo@gmail.com> 1776107593 +0300	commit: Made changes to Font and general layout of the website
+44e7aa98629870df411b8493a25a1dab0df38c69 7c7fedef014d424481a67fb59e2b4aab6ea60a2a Ivan Nyayo <ivannyayo@gmail.com> 1777240890 +0300	commit: Commented the spinner on about, blog and index pages
+7c7fedef014d424481a67fb59e2b4aab6ea60a2a 7a48923fad826be2da8dc6170cfc73b8907ad551 Ivan Nyayo <ivannyayo@gmail.com> 1777241325 +0300	commit: Modified the different pages with spinners to display none
+7a48923fad826be2da8dc6170cfc73b8907ad551 a1ba1eb925e00c03a77ff98f800c53a535d889d4 Ivan Nyayo <ivannyayo@gmail.com> 1777317811 +0300	commit: Modified the hero section and navbar
