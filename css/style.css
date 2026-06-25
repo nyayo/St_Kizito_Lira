@@ -1888,6 +1888,116 @@ small,
     padding-top: .85rem;
 }
 
+.program-fees-page {
+    position: relative;
+}
+
+.program-fees-hero,
+.fees-section-card,
+.fees-summary-card,
+.fees-note-card,
+.program-fees-note {
+    background: #FFFFFF;
+    border: 1px solid var(--school-border);
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.program-fees-hero {
+    padding: 1.5rem;
+}
+
+.program-fees-kicker {
+    display: inline-block;
+    margin-bottom: .75rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+}
+
+.program-fees-note,
+.fees-summary-card,
+.fees-note-card {
+    padding: 1.1rem;
+}
+
+.fees-summary-card h5,
+.fees-note-card h4,
+.fees-section-card h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.fees-summary-card {
+    height: 100%;
+}
+
+.fees-summary-card p,
+.program-fees-note p,
+.fees-note-card p,
+.fees-note-item span {
+    color: var(--school-ink-soft);
+}
+
+.fees-table {
+    margin-bottom: 0;
+}
+
+.fees-table thead th {
+    background: #1D2752;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: .82rem;
+}
+
+.fees-table tbody td {
+    font-size: .96rem;
+    color: var(--school-ink);
+}
+
+.fees-table th,
+.fees-table td {
+    text-align: center;
+    padding: .9rem .85rem;
+}
+
+.fees-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    border-radius: 999px;
+    background: rgba(77, 101, 249, 0.12);
+    color: var(--bs-primary);
+    font-size: .77rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: .35rem .7rem;
+}
+
+.fees-note-list {
+    padding-left: 1rem;
+}
+
+.fees-note-list li {
+    margin-bottom: .4rem;
+}
+
+.fees-note-item {
+    display: grid;
+    gap: .2rem;
+    padding: .75rem 0;
+    border-bottom: 1px solid rgba(57, 61, 114, 0.12);
+}
+
+.fees-note-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
 @media (max-width: 991.98px) {
     .school-brand-badge {
         width: 4.5rem;
@@ -1939,6 +2049,10 @@ small,
     .footer-brand-badge {
         width: 2.35rem;
         height: 2.7rem;
+    }
+
+    .program-fees-hero {
+        padding: 1.2rem;
     }
 }
 /*** Round 4 Refinements End ***/
