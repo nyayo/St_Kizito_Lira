@@ -45,7 +45,7 @@
     const $directLink = $header.find('.navbar-nav > .nav-link[href="' + currentPage + '"]');
     if ($directLink.length) {
         $directLink.addClass('active');
-    } else if (['blog.html', 'testimonial.html'].includes(currentPage)) {
+    } else if (['community.html', 'gallery.html'].includes(currentPage)) {
         $header.find('.nav-item.dropdown > .nav-link').addClass('active');
         $header.find('.dropdown-item[href="' + currentPage + '"]').addClass('active');
     } else if (currentPage === 'team.html') {
@@ -135,6 +135,47 @@
                 items:3
             }
         }
+    });
+
+    const refreshTestimonialToggles = function () {
+        document.querySelectorAll('.testimonial-item').forEach(function (card) {
+            const text = card.querySelector('.testimonial-text');
+            const button = card.querySelector('.testimonial-more');
+
+            if (!text || !button) {
+                return;
+            }
+
+            const hasOverflow = text.scrollHeight > text.clientHeight + 1;
+            button.hidden = !hasOverflow;
+
+            if (!hasOverflow) {
+                text.classList.remove('is-expanded');
+                button.setAttribute('aria-expanded', 'false');
+                button.textContent = 'More';
+            }
+        });
+    };
+
+    document.querySelectorAll('.testimonial-item').forEach(function (card) {
+        const text = card.querySelector('.testimonial-text');
+        const button = card.querySelector('.testimonial-more');
+
+        if (!text || !button) {
+            return;
+        }
+
+        button.addEventListener('click', function () {
+            const isExpanded = text.classList.toggle('is-expanded');
+            button.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+            button.textContent = isExpanded ? 'Less' : 'More';
+        });
+    });
+
+    window.addEventListener('load', refreshTestimonialToggles);
+    window.addEventListener('resize', function () {
+        window.clearTimeout(window.__testimonialToggleTimer);
+        window.__testimonialToggleTimer = window.setTimeout(refreshTestimonialToggles, 150);
     });
 
 
